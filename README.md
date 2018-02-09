@@ -31,13 +31,14 @@ cd NLTemplate/NLTemplate
 gcc -Wall -pedantic -o demo -lstdc++ *.cpp
 ./demo
 ```
-If you are building on a Linux box, ensure that you have buid tools installed, then, in the
-NLTemplate/NLTemplate directory, run build the test app with the following:
+If you are building on a Linux box, ensure that you have buid-essential (or simmilar) installed. Then, in the
+NLTemplate/NLTemplate directory, build the test app with the following:
 
 ``` bash
 make all
 ./demo
 ```
+Note that the test app's file-based template loader needs the path to the template files in ../Templates. If you attempt to run the app from where it builds, it'll break with an unhandled exception. To get it to work, copy the example program to ../ , then run it from there. For more fun, run it in ddd, or your favorite debugger.
 
 ### Example ###
 
